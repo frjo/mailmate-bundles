@@ -1,0 +1,7 @@
+{
+	contactEmailRot13 = "sewb@kqro.bet";
+	contactName = "Fredrik Jonsson";
+	description = "BBEdit integration.";
+	name = "BBEdit";
+	uuid = "EDC281D5-B737-4E60-AADE-3DE1A03CDA04";
+}

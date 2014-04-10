@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -f /usr/bin/bbedit ]
+then
+	/usr/bin/bbedit --clean --view-top --wait --resume --language Markdown +"${MM_LINE_NUMBER}" --pipe-title "${MM_SUBJECT}" "${MM_EDIT_FILEPATH}"
+else
+	osascript -e 'tell application "System Events" to display dialog "Make sure you have the “bbedit” command installed. See the “Install Command Line Tools…” command in the BBEdit menu." buttons "OK" default button 1 with title "Unable to locate BBEdit"' >/dev/null 2>&1 &
+fi
