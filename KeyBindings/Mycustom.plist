@@ -1,0 +1,54 @@
+{
+  // Custom keybindings for Mailmate
+
+  " " = "scrollPageDownOrNextUnreadMessage:"; // Space
+  "n" = "newMessage:";
+  "r" = "replyAll:";
+  "o" = "openMessages:";
+  "z" = "undo:";
+
+  "s" = ( "goToMailbox:", "ALL_MESSAGES", "mailboxSearch:" );
+  "/" = "mailboxSearch:";
+
+  "a" = "archive:";
+  "d" = "deleteMessage:";
+  "m" = "moveToMailbox:";
+
+  "k" = "toggleReadState:";
+  "f" = "toggleFlag:";
+  "h" = "toggleMuteState:";
+
+  "j" = ( "markAsJunk:", "moveToJunk:" );
+  "J" = ( "markAsNotJunk:", "archive:" );
+
+  "c" = "showCorrespondence:";
+  "e" = "showThread:";
+
+  // Set focus.
+  "v" = ( "makeFirstResponder:", "mailboxesOutline" );
+  "b" = ( "makeFirstResponder:", "mainOutline" );
+
+  "i" = ( "goToMailbox:", "INBOX", "makeFirstResponder:", "mainOutline" );
+  "g" = {
+    "g" = "goToMailbox:";
+    "a" = ( "goToMailbox:", "ARCHIVE", "makeFirstResponder:", "mainOutline" );
+    "d" = ( "goToMailbox:", "DRAFTS", "makeFirstResponder:", "mainOutline" );
+    "f" = ( "goToMailbox:", "FLAGGED", "makeFirstResponder:", "mainOutline" );
+    "j" = ( "goToMailbox:", "JUNK", "makeFirstResponder:", "mainOutline" );
+    "m" = ( "goToMailbox:", "ALL_MESSAGES", "makeFirstResponder:", "mainOutline" );
+    "s" = ( "goToMailbox:", "SENT", "makeFirstResponder:", "mainOutline" );
+    "t" = ( "goToMailbox:", "TRASH", "makeFirstResponder:", "mainOutline" );
+  };
+
+  "t" = {
+    "f" = ( "setTag:", "Family" );
+    "v" = ( "setTag:", "Friend" );
+    "c" = ( "setTag:", "Customer" );
+    "w" = ( "setTag:", "Work" );
+  };
+
+  // In composer.
+  "^i" = "showIdentities:";
+  "^s" = "showSignatures:";
+
+}
